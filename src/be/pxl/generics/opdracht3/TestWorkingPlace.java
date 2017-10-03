@@ -5,5 +5,13 @@ public class TestWorkingPlace {
 		Car car = new Car();
 		CircularSaw circularSaw = new CircularSaw();
 		Bike bike = new Bike();
+		
+		WorkingPlace<Vehicle> werkplaats = new WorkingPlace<>();
+		//WorkingPlace<Motorized> Werkplaats2 = new WorkingPlace<>();
+		//WorkingPlace<Vehicle> wp = new WorkingPlace<>();
+		
+		werkplaats.startFixing(car);
+		//werkplaats.startFixing(circularSaw);
+		werkplaats.startFixing(bike);
 	}
 }
