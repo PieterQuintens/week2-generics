@@ -6,12 +6,12 @@ public class TestWorkingPlace {
 		CircularSaw circularSaw = new CircularSaw();
 		Bike bike = new Bike();
 		
-		WorkingPlace werkplaats = new WorkingPlace<>();
+		WorkingPlace<Car> werkplaats = new WorkingPlace<>();
 		//WorkingPlace<Motorized> Werkplaats2 = new WorkingPlace<>();
 		//WorkingPlace<Vehicle> wp = new WorkingPlace<>();
 		
 		werkplaats.startFixing(car);
 		//werkplaats.startFixing(circularSaw);
-		werkplaats.startFixing(bike);
+		//werkplaats.startFixing(bike);
 	}
 }

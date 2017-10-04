@@ -3,7 +3,8 @@ package be.pxl.generics.opdracht3;
 // public class WorkingPlace<T extends Motorized> {
 // public class WorkingPlace<T extends Vehicle> {
 // public class WorkingPlace<T extends Bike> {
- public class WorkingPlace<T extends Vehicle & Motorized > {
+ public class WorkingPlace<T> {
+// public class WorkingPlace<T extends Vehicle & Motorized > {
 
 
 	private T thingToFix;
