@@ -2,16 +2,16 @@ package be.pxl.generics.opdracht1;
 
 import java.util.ArrayList;
 
-public class League<T extends Team<?>> {
+public class League<T extends Player> {
 	
-	private ArrayList<T> league = new ArrayList<>();
+	private ArrayList<Team<T>> league = new ArrayList<>();
 	
-	public void addTeam(T team) {
+	public void addTeam(Team<T> team) {
 		league.add(team);
 	}
 	
 	public void printTeams() {
-		for(Team<?> team: league) {
+		for(Team<T> team: league) {
 			System.out.println(team.getName() + " " + team.ranking());
 		}
 	}

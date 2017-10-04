@@ -6,7 +6,7 @@ public class TestWorkingPlace {
 		CircularSaw circularSaw = new CircularSaw();
 		Bike bike = new Bike();
 		
-		WorkingPlace<Vehicle> werkplaats = new WorkingPlace<>();
+		WorkingPlace werkplaats = new WorkingPlace<>();
 		//WorkingPlace<Motorized> Werkplaats2 = new WorkingPlace<>();
 		//WorkingPlace<Vehicle> wp = new WorkingPlace<>();
 		

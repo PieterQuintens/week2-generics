@@ -12,7 +12,7 @@ public class TestClassApp {
 		Team<Player> team3 = new Team<>("team3");
 		Team<Player> team4 = new Team<>("team4");
 		
-		League<Team<Player>> league1 = new League<>();
+		League<Player> league1 = new League<>();
 		
 		league1.addTeam(team1);
 		league1.addTeam(team3);

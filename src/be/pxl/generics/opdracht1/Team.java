@@ -44,7 +44,9 @@ public class Team<P extends Player> {
 	}
 
 	public void addPlayer(P player) {
-		members.add(player);
+		if (!members.contains(player)) {
+			members.add(player);
+		}
 	}
 
 	public int numberOfPlayers() {
@@ -65,10 +67,10 @@ public class Team<P extends Player> {
 		opponent.played = opponent.getPlayed() + 1;
 		played = getPlayed() + 1;
 	}
-	
-	public int ranking(){
+
+	public int ranking() {
 		int ranking = (won * 3) + tied;
-		
+
 		return ranking;
 	}
 }
